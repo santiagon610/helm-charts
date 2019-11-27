@@ -1,0 +1,14 @@
+apiVersion: v2
+name: webapp-mongo
+description: A Helm chart deploying a basic web app, witn optional MongoDB
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+
+dependencies:
+- name: mongodb
+  version: 6.x
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  condition: mongodb.enabled
+  tags:
+    - database
