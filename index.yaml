@@ -3,7 +3,7 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2019-11-27T22:03:23.2731501Z"
+    created: "2019-11-27T22:29:10.6308274Z"
     description: A Helm chart deploying a basic web app
     digest: 197b24b6d86a86ffa15c2758813fd29bb7badc494e85cf35a0fcc8e54a05ef5c
     name: webapp
@@ -11,22 +11,4 @@ entries:
     urls:
     - webapp-1.0.0.tgz
     version: 1.0.0
-  webapp-mongo:
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2019-11-27T22:03:23.2756721Z"
-    dependencies:
-    - condition: mongodb.enabled
-      name: mongodb
-      repository: https://kubernetes-charts.storage.googleapis.com/
-      tags:
-      - database
-      version: 6.x
-    description: A Helm chart deploying a basic web app, witn optional MongoDB
-    digest: 032e8219632da0cc8a44e9962c693981a4fc102fd71933f1f44a927f0fc9b7bb
-    name: webapp-mongo
-    type: application
-    urls:
-    - webapp-mongo-1.0.0.tgz
-    version: 1.0.0
-generated: "2019-11-27T22:03:23.2724949Z"
+generated: "2019-11-27T22:29:10.630095Z"
