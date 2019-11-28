@@ -1,6 +1,6 @@
 apiVersion: v2
 name: webapp
-description: A Helm chart deploying a basic web app
+description: Helm chart for deploying a standard web app
 type: application
-version: 1.0.0
+version: 1.1.0
 appVersion: 1.0.0

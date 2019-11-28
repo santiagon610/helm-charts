@@ -3,12 +3,22 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2019-11-27T22:29:10.6308274Z"
-    description: A Helm chart deploying a basic web app
-    digest: 197b24b6d86a86ffa15c2758813fd29bb7badc494e85cf35a0fcc8e54a05ef5c
+    created: "2019-11-28T17:57:00.7018003Z"
+    description: Helm chart for deploying a standard web app
+    digest: 772f35b011e91b8d859113033ce561bbaefc0e9d0cd3d9f8735703ed582b261d
+    name: webapp
+    type: application
+    urls:
+    - webapp-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2019-11-28T17:57:00.7012856Z"
+    description: Helm chart for deploying a standard web app
+    digest: 1a6874cc91c01df9c5204fb94abb46a15ab341ed494a38bc40d5c2787ea8c107
     name: webapp
     type: application
     urls:
     - webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2019-11-27T22:29:10.630095Z"
+generated: "2019-11-28T17:57:00.7005823Z"
