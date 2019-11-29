@@ -49,6 +49,11 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+livenessProbe:
+  failureThreshold: 3
+  initialDelaySeconds: 20
+  periodSeconds: 20
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: false
