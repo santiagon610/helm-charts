@@ -1,6 +1,13 @@
 apiVersion: v2
 name: webapp
-description: Helm chart for deploying a standard web app
+description: A generic reuseable Helm chart for deploying almost any web app and exposing HTTP traffic to it
 type: application
-version: 1.2.0
+version: 1.3.0
 appVersion: 1.0.0
+maintainers:
+  - name: Ben Coleman
+    url: https://benc.dev
+icon: https://raw.githubusercontent.com/benc-uk/helm-charts/master/webapp/icon.png
+home: https://github.com/benc-uk/helm-charts
+sources:
+  - https://github.com/benc-uk/helm-charts

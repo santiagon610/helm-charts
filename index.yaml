@@ -3,7 +3,25 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2019-11-29T13:40:06.7541126Z"
+    created: "2020-11-09T14:07:31.1536263Z"
+    description: A generic reuseable Helm chart for deploying almost any web app and
+      exposing HTTP traffic to it
+    digest: 5d080cf3e1cf9fc987e185c5f4c601f11947a834c76c3429a148ba2dcec463b2
+    home: https://github.com/benc-uk/helm-charts
+    icon: https://raw.githubusercontent.com/benc-uk/helm-charts/master/webapp/icon.png
+    maintainers:
+    - name: Ben Coleman
+      url: https://benc.dev
+    name: webapp
+    sources:
+    - https://github.com/benc-uk/helm-charts
+    type: application
+    urls:
+    - webapp-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-11-09T14:07:31.1531408Z"
     description: Helm chart for deploying a standard web app
     digest: 1f32477b1a6536f12855b13d6e3cb357e056dccdc8cc595cddbd014d1f817fde
     name: webapp
@@ -13,7 +31,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2019-11-29T13:40:06.7532586Z"
+    created: "2020-11-09T14:07:31.1528211Z"
     description: Helm chart for deploying a standard web app
     digest: 772f35b011e91b8d859113033ce561bbaefc0e9d0cd3d9f8735703ed582b261d
     name: webapp
@@ -23,7 +41,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2019-11-29T13:40:06.7522988Z"
+    created: "2020-11-09T14:07:31.1525304Z"
     description: Helm chart for deploying a standard web app
     digest: 1a6874cc91c01df9c5204fb94abb46a15ab341ed494a38bc40d5c2787ea8c107
     name: webapp
@@ -31,4 +49,4 @@ entries:
     urls:
     - webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2019-11-29T13:40:06.7490084Z"
+generated: "2020-11-09T14:07:31.1521114Z"
