@@ -2,7 +2,7 @@ apiVersion: v2
 name: webapp
 description: A generic reuseable Helm chart for deploying almost any web app and exposing HTTP traffic to it
 type: application
-version: 1.3.0
+version: 1.4.0
 appVersion: 1.0.0
 maintainers:
   - name: Ben Coleman

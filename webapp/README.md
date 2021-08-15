@@ -1,8 +1,20 @@
-# Webapp Chart
+# Generic Web App
 
-![Version: 1.3.0](https://img.shields.io/badge/Version-1.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.4.0](https://img.shields.io/badge/Version-1.4.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 A generic reuseable Helm chart for deploying almost any web app and exposing HTTP traffic to it
+
+**Homepage:** <https://github.com/benc-uk/helm-charts>
+
+## Maintainers
+
+| Name        | Email | Url              |
+| ----------- | ----- | ---------------- |
+| Ben Coleman |       | https://benc.dev |
+
+## Source Code
+
+- <https://github.com/benc-uk/helm-charts>
 
 ## Values
 
@@ -18,9 +30,9 @@ A generic reuseable Helm chart for deploying almost any web app and exposing HTT
 | service.port                      | int    | `80`                | Port the service accepts traffic on                                                                                      |
 | service.targetPort                | int    | `8080`              | Port the container accepts traffic on                                                                                    |
 | ingress.enabled                   | bool   | `false`             | Use an ingress or not                                                                                                    |
-| ingress.host                      | string | `nil`               | Ingress host *must* be set if enabled                                                                                    |
+| ingress.host                      | string | `nil`               | Ingress host _must_ be set if enabled                                                                                    |
 | ingress.tls.enabled               | bool   | `true`              | Use TLS on ingress                                                                                                       |
-| ingress.tls.secretName            | string | `nil`               | Secret holding cert *must* be set if TLS enabled                                                                         |
+| ingress.tls.secretName            | string | `nil`               | Secret holding cert _must_ be set if TLS enabled                                                                         |
 | ingress.annotations               | object | `{}`                | Extra annotations to set on the ingress                                                                                  |
 | resources.limits.cpu              | string | `"1000m"`           | CPU hard limit                                                                                                           |
 | resources.limits.memory           | string | `"256Mi"`           | Memory hard limit                                                                                                        |
@@ -35,9 +47,12 @@ A generic reuseable Helm chart for deploying almost any web app and exposing HTT
 | livenessProbe.periodSeconds       | int    | `20`                | Interval between liveness probe checks                                                                                   |
 | serviceAccount.create             | bool   | `false`             | Specifies whether a service account should be created                                                                    |
 | serviceAccount.name               | string | `nil`               | The name of the service account to use. If not set a name is generated                                                   |
+| persistence.enabled               | bool   | `false`             | Use persistent volume                                                                                                    |
+| persistence.size                  | string | `"1Gi"`             | Persistent volume size                                                                                                   |
+| persistence.accessMode            | string | `"ReadWriteOnce"`   | Persistent volume access mode                                                                                            |
+| persistence.mountPath             | string | `nil`               | Persistent volume mount path                                                                                             |
 | podSecurityContext                | object | `{}`                | Pod security context spec                                                                                                |
 | securityContext                   | object | `{}`                | Security context spec                                                                                                    |
 | nodeSelector                      | object | `{}`                | Node selector spec                                                                                                       |
 | tolerations                       | list   | `[]`                | Node tolerations spec                                                                                                    |
 | affinity                          | object | `{}`                | Node affinity spec                                                                                                       |
-

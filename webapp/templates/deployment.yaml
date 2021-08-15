@@ -56,6 +56,16 @@ spec:
               port: {{ .Values.service.targetPort }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.persistence.enabled }}
+          volumeMounts:
+            - mountPath: {{ .Values.persistence.mountPath }}
+              name: {{ include "webapp.fullname" . }}-vol
+
+      volumes:
+        - name: {{ include "webapp.fullname" . }}-vol
+          persistentVolumeClaim:
+            claimName: {{ include "webapp.fullname" . }}  
+          {{- end }}                 
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
