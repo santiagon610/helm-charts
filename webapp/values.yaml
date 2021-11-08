@@ -35,6 +35,8 @@ service:
 ingress:
   # -- Use an ingress or not
   enabled: false
+  # -- Set the IngressClass to use
+  className:
   # -- Ingress host *must* be set if enabled
   host:
   tls:

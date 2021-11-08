@@ -6,7 +6,7 @@ Add repo to helm
 
 ```bash
 helm repo add benc-uk https://benc-uk.github.io/helm-charts
-helm repo update
+helm repo update benc-uk 
 ```
 
 To use
