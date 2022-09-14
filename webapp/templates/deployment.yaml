@@ -4,6 +4,8 @@ metadata:
   name: {{ include "webapp.fullname" . }}
   labels:
     {{- include "webapp.labels" . | nindent 4 }}
+  annotations:
+    {{- toYaml .Values.deploymentAnnotations | nindent 4 }}    
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -11,6 +13,8 @@ spec:
       {{- include "webapp.selectorLabels" . | nindent 6 }}
   template:
     metadata:
+      annotations:
+        {{- toYaml .Values.podAnnotations | nindent 8 }}
       labels:
         {{- include "webapp.selectorLabels" . | nindent 8 }}
     spec:

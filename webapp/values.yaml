@@ -16,10 +16,10 @@ replicaCount: 1
 env: {}
 #  MY_VAR: 'value 123'
 
-# -- Environmental held in secrets, the key is env variable name and `secretName` and `secretKey` reference the secret to use
+# -- Env vars from Secrets, the key is env var name, `secretName` and `secretKey` reference the Secret
 secretEnv: {}
-#  SECRET_PWD:
-#    secretName: mysecrets
+#  SECRET_THING:
+#    secretName: my-secret
 #    secretKey: password
 
 # Network traffic to the pods
@@ -30,6 +30,8 @@ service:
   port: 80
   # -- Port the container accepts traffic on
   targetPort: 8080
+  # -- Service annotations
+  annotations: {}
 
 # Configure Ingress, switch on/off-able
 ingress:
@@ -90,7 +92,7 @@ persistence:
   size: 1Gi
   # -- Persistent volume access mode
   accessMode: ReadWriteOnce
-  # -- Persistent volume mount path
+  # -- Persistent volume mount path, must be set if enabled
   mountPath:
 
 # -- Pod security context spec
@@ -107,3 +109,12 @@ tolerations: []
 
 # -- Node affinity spec
 affinity: {}
+
+# -- Pod annotations
+podAnnotations: {}
+
+# -- Deployment annotations
+deploymentAnnotations: {}
+
+# -- PVC annotations
+pvcAnnotations: {}
