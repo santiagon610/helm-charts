@@ -43,7 +43,7 @@ ingress:
   host:
   tls:
     # -- Use TLS on ingress
-    enabled: true
+    enabled: false
     # -- Secret holding cert *must* be set if TLS enabled
     secretName:
   # -- Extra annotations to set on the ingress
@@ -112,6 +112,9 @@ affinity: {}
 
 # -- Pod annotations
 podAnnotations: {}
+
+# -- Pod labels
+podLabels: {}
 
 # -- Deployment annotations
 deploymentAnnotations: {}

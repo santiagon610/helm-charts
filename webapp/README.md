@@ -1,6 +1,6 @@
 # webapp
 
-![Version: 1.4.2](https://img.shields.io/badge/Version-1.4.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.4.3](https://img.shields.io/badge/Version-1.4.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 A generic chart for deploying almost any simple web app or RESTful microservice as a deployment, and exposing HTTP(S) traffic to it via a range of options, including Ingress or a basic Service
 
@@ -32,7 +32,7 @@ A generic chart for deploying almost any simple web app or RESTful microservice 
 | ingress.className                 | string | `nil`               | Set the IngressClass to use                                                                       |
 | ingress.enabled                   | bool   | `false`             | Use an ingress or not                                                                             |
 | ingress.host                      | string | `nil`               | Ingress host _must_ be set if enabled                                                             |
-| ingress.tls.enabled               | bool   | `true`              | Use TLS on ingress                                                                                |
+| ingress.tls.enabled               | bool   | `false`             | Use TLS on ingress                                                                                |
 | ingress.tls.secretName            | string | `nil`               | Secret holding cert _must_ be set if TLS enabled                                                  |
 | livenessProbe.failureThreshold    | int    | `3`                 | Number of liveness probe failures to tolerate                                                     |
 | livenessProbe.initialDelaySeconds | int    | `20`                | Delay before liveness probe starts                                                                |
@@ -45,6 +45,7 @@ A generic chart for deploying almost any simple web app or RESTful microservice 
 | persistence.mountPath             | string | `nil`               | Persistent volume mount path, must be set if enabled                                              |
 | persistence.size                  | string | `"1Gi"`             | Persistent volume size                                                                            |
 | podAnnotations                    | object | `{}`                | Pod annotations                                                                                   |
+| podLabels                         | object | `{}`                | Pod labels                                                                                        |
 | podSecurityContext                | object | `{}`                | Pod security context spec                                                                         |
 | pvcAnnotations                    | object | `{}`                | PVC annotations                                                                                   |
 | replicaCount                      | int    | `1`                 | Number of pod replicas                                                                            |
