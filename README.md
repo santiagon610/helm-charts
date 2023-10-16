@@ -13,4 +13,4 @@ To use
 ```bash
 helm install example ml-alpha/webapp
 ```
-See [readme](./webapp/README.md) for full details of values and configuration
+See [webapp](./webapp/README.md) for full details of values and configuration
