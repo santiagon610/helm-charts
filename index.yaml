@@ -3,7 +3,17 @@ entries:
   celworker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-16T14:52:24.01437+02:00"
+    created: "2023-10-16T14:56:56.850436+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 63fe0c82e7e37bf529a0d4ffd527cb9759f3666a954005dcd46287d93504413f
+    name: celworker
+    type: application
+    urls:
+    - https://ml-alpha.github.io/helm-charts/celworker-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-16T14:56:56.850319+02:00"
     description: A Helm chart for Kubernetes
     digest: 9f21a0eaa49d85660ae381c2ac3e9f6f10e22326cac94f107d8c24f0a0951db7
     name: celworker
@@ -13,7 +23,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-16T14:52:24.014249+02:00"
+    created: "2023-10-16T14:56:56.850189+02:00"
     description: A Helm chart for Kubernetes
     digest: b7fad4e3e5bac3ea221aae8f21774c7cf67385c49af0a136d4a7dadb2f22e080
     name: celworker
@@ -23,7 +33,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-16T14:52:24.014117+02:00"
+    created: "2023-10-16T14:56:56.850042+02:00"
     description: A Helm chart for Kubernetes
     digest: 351b5297d80e4047497a64eee0655ba096b97e6e36be85c1ecb53137a19a8d26
     name: celworker
@@ -34,7 +44,7 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-10-16T14:52:24.014924+02:00"
+    created: "2023-10-16T14:56:56.85103+02:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -50,7 +60,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-10-16T14:52:24.014653+02:00"
+    created: "2023-10-16T14:56:56.850751+02:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -64,4 +74,4 @@ entries:
     urls:
     - https://ml-alpha.github.io/helm-charts/webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-16T14:52:24.013919+02:00"
+generated: "2023-10-16T14:56:56.849819+02:00"
