@@ -15,7 +15,7 @@ entries:
     - https://github.com/ml-alpha/helm-charts
     type: application
     urls:
-    - https://mlalpha.github.io/helm-charts/webapp-1.0.1.tgz
+    - https://ml-alpha.github.io/helm-charts/webapp-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
@@ -31,6 +31,6 @@ entries:
     - https://github.com/ml-alpha/helm-charts
     type: application
     urls:
-    - https://mlalpha.github.io/helm-charts/webapp-1.0.0.tgz
+    - https://ml-alpha.github.io/helm-charts/webapp-1.0.0.tgz
     version: 1.0.0
 generated: "2023-10-16T13:26:27.506414+02:00"
