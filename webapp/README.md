@@ -4,17 +4,17 @@
 
 A generic chart for deploying almost any simple web app or RESTful microservice as a deployment, and exposing HTTP(S) traffic to it via a range of options, including Ingress or a basic Service
 
-**Homepage:** <https://github.com/benc-uk/helm-charts>
+**Homepage:** <https://github.com/ml-alpha/helm-charts>
 
 ## Maintainers
 
 | Name        | Email             | Url                                    |
 | ----------- | ----------------- | -------------------------------------- |
-| Ben Coleman | benc.uk@gmail.com | https://github.com/benc-uk/helm-charts |
+| Ben Coleman | benc.uk@gmail.com | https://github.com/ml-alpha/helm-charts |
 
 ## Source Code
 
-- <https://github.com/benc-uk/helm-charts>
+- <https://github.com/ml-alpha/helm-charts>
 
 ## Values
 
