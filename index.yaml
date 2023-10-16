@@ -3,7 +3,17 @@ entries:
   celworker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-16T14:43:17.336855+02:00"
+    created: "2023-10-16T14:48:53.323952+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 0b2b10f7921e0a2596fe675c1b07939800fe9e60923e7cb889e7a5750c415eed
+    name: celworker
+    type: application
+    urls:
+    - https://ml-alpha.github.io/helm-charts/celworker-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-16T14:48:53.323049+02:00"
     description: A Helm chart for Kubernetes
     digest: 351b5297d80e4047497a64eee0655ba096b97e6e36be85c1ecb53137a19a8d26
     name: celworker
@@ -14,7 +24,7 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-10-16T14:43:17.337418+02:00"
+    created: "2023-10-16T14:48:53.324567+02:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -30,7 +40,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-10-16T14:43:17.337144+02:00"
+    created: "2023-10-16T14:48:53.324278+02:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -44,4 +54,4 @@ entries:
     urls:
     - https://ml-alpha.github.io/helm-charts/webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-16T14:43:17.336606+02:00"
+generated: "2023-10-16T14:48:53.322826+02:00"
