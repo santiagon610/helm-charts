@@ -45,7 +45,11 @@ spec:
                 secretKeyRef:
                   name: {{ $value.secretName }}
                   key: {{ $value.secretKey }}
-            {{- end }}            
+            {{- end }}
+        {{- with .Values.envFrom }}
+          envFrom:
+            {{- toYaml . | nindent 12 }}
+        {{- end }}            
           ports:
             - name: http
               containerPort: {{ .Values.service.targetPort }}

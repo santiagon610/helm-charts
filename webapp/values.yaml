@@ -22,6 +22,10 @@ secretEnv: {}
 #    secretName: my-secret
 #    secretKey: password
 
+envFrom: []
+# - secretRef:
+#     name: my-secret
+
 # Network traffic to the pods
 service:
   # -- Service type, change to LoadBalancer or NodePort to expose traffic outside the cluster

@@ -3,7 +3,7 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-10-16T12:03:53.005921+02:00"
+    created: "2023-10-16T13:17:50.813798+02:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -17,4 +17,4 @@ entries:
     urls:
     - https://ml-alpha.github.io/helm-charts/webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-16T12:03:53.005379+02:00"
+generated: "2023-10-16T13:17:50.813298+02:00"
