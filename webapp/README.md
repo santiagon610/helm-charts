@@ -6,12 +6,6 @@ A generic chart for deploying almost any simple web app or RESTful microservice 
 
 **Homepage:** <https://github.com/ml-alpha/helm-charts>
 
-## Maintainers
-
-| Name        | Email             | Url                                    |
-| ----------- | ----------------- | -------------------------------------- |
-| Ben Coleman | benc.uk@gmail.com | https://github.com/ml-alpha/helm-charts |
-
 ## Source Code
 
 - <https://github.com/ml-alpha/helm-charts>
