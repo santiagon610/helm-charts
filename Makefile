@@ -1,10 +1,11 @@
-URL=https://ml-alpha.github.io/helm-charts
-webapp:
+URL="https://ml-alpha.github.io/helm-charts"
+
+webapp.build:
 	helm lint webapp
 	helm package webapp
 	helm repo index --url $(URL) .
 
-celworker:
+celworker.build:
 	helm lint celworker
 	helm package celworker
 	helm repo index --url $(URL) .
