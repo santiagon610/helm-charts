@@ -54,17 +54,17 @@ ingress:
   annotations: {}
 
 # Limit resources
-resources:
-  limits:
-    # -- CPU hard limit
-    cpu: 1000m
-    # -- Memory hard limit
-    memory: 256Mi
-  requests:
-    # -- CPU resource request
-    cpu: 200m
-    # -- Memory resource request
-    memory: 128Mi
+resources: {}
+  # limits:
+  #   # -- CPU hard limit
+  #   cpu: 1000m
+  #   # -- Memory hard limit
+  #   memory: 256Mi
+  # requests:
+  #   # -- CPU resource request
+  #   cpu: 200m
+  #   # -- Memory resource request
+  #   memory: 128Mi
 
 # -- Any secrets needed to pull image
 imagePullSecrets: []
