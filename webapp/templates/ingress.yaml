@@ -1,6 +1,10 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "webapp.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
+{{- $oauthPath := .Values.ingress.oauth.path -}}
+{{- $oauthPathType := .Values.ingress.oauth.pathType -}}
+{{- $oauthSvcName := .Values.ingress.oauth.service.name -}}
+{{- $oauthSvcPort := .Values.ingress.oauth.service.port -}}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -34,7 +38,15 @@ spec:
             backend:
               service:
                 name: {{ $fullName }}
-                port: 
+                port:
                   number: {{ $svcPort }}
-
+          {{- if .Values.ingress.oauth.enabled }}
+          - path: {{ .Values.ingress.oauth.path }}
+            pathType: {{ .Values.ingress.oauth.pathType }}
+            backend:
+              service:
+                name: {{ .Values.ingress.oauth.service.name }}
+                port:
+                  number: {{ .Values.ingress.oauth.service.port }}
+          {{- end }}
 {{- end }}
