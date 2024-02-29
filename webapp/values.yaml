@@ -52,6 +52,22 @@ ingress:
     secretName:
   # -- Extra annotations to set on the ingress
   annotations: {}
+  # -- Configure Ingress for OAuth2, switch on/off-able
+  oauth:
+    # -- Use OAuth2 on ingress or not
+    enabled: false
+    # -- Extra annotations to set on the ingress OAuth2 path
+    annotations: {}
+    # -- OAuth2 path, must be set if enabled
+    path: /oauth2
+    # -- OAuth2 path type, must be set if enabled, defaults to ImplementationSpecific
+    pathType: ImplementationSpecific
+    # -- OAuth2 downstream service details, must be set if enabled
+    service:
+      # -- OAuth2 downstream service name, must be set if enabled
+      name: oauth2-proxy
+      # -- OAuth2 downstream service port number, must be set if enabled
+      port: 80
 
 # Limit resources
 resources: {}
